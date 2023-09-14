@@ -1,0 +1,56 @@
+Question 1 
+https://github.com/shur1-uofa/cmput404-lab1
+
+
+Question 2
+As expected, it is not installed 
+
+
+Question 3
+2.31.0
+
+
+Question 4
+Well it's not installed so the difference is:
+Outside of the virtual environment, the python script does not run due to an ModuleNotFoundError
+
+
+Question 5
+301 - Moved Permanently
+Pass in "http://www.google.com" to get 200 status code
+
+
+Question 6
+301 - Moved Permanently
+Both curl -i & -iL options return this info
+
+
+Question 7
+The -X option sets the HTTP method. In our case, it set it to the POST method. The default value is GET
+
+What changed : 
+Date of request (obviously)
+Unique ID 
+Remote Port # 
+
+The HTTP method : 
+Without -X POST, the response data says it's GET 
+With -X POST, the response data says it's POST
+
+For -X POST, the response data says the content length is 3 and type application/x-www-form-urlencoded
+
+Also, it includes this gibberish in the form contents of response data:
+    <DT>X: <i>&lt;type 'instance'&gt;</i>
+    <DD>MiniFieldStorage('X', 'Y')
+Or in more human readable format 
+<DT> X: <i><type 'instance'></i>
+<DD> MiniFieldStorage('X', 'Y')
+
+This likely came from the -d option in the curl command
+
+
+The POST method is useful for creating or updating some data on a server as its name implies
+
+
+
+
